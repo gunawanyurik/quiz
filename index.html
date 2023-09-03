@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YRK Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="heading">
+        <h1> Selamat Datang di Fantastic QUIZ !!!!!!</h1>
+    </div>
+    <div class="container">
+        <form>
+            <div>
+                <label for="Username">Masukkan nama anda : </label>
+                <input type="text" id="Username" name="Username" required> 
+            </div>
+            <div>
+                <div class="ques"><label for="topic">Topik mana yang ini anda pilih?</label></div> <br>
+                <input type="radio" value="lontong" id="topic" name="topic" required>Lontong Quiz <br>
+                <input type="radio" value="sengklek" id="topic" name="topic">Sengklek Quiz
+            </div> 
+            <button type="button"> Mulai Quiz </button>
+        </form>
+    </div>
+    <div class="quiz">
+        <div class="heading name-topic">
+            <h2> Topik : <span class="topic2"> Lontong Quiz </span></h2>
+            <h2>Nama : <span class="name2"> Anonymous </span></h2>
+            <div id="timer">4:00</div>
+        </div>
+        
+        <div class="answer">
+                
+        </div>
+        <button id="submit"> Submit </button>
+
+        <p class="remark"></p>
+
+        <button class="restart"> Restart Quiz </button>
+    </div>
+    
+
+    <script src="quiz.js"></script>
+    
+</body>
+</html>
